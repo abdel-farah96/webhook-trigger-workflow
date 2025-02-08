@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
     inputs:
       artifact_path:
-        required:true
-        type:string
+        required: true
+        type: string
 
 jobs:
   build:
