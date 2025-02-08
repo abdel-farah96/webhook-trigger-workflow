@@ -1,0 +1,15 @@
+name: Triggered from webhook
+
+on: 
+  workflow_dispatch:
+    inputs:
+      artifact_path:
+        required:true
+        type:string
+
+jobs:
+  build:
+    runs-on:ubuntu-latest
+    steps:
+      - name: Print artifact_path
+        run: echo The path is  ${{inputs.artifact_path}}
